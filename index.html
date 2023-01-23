@@ -1,1 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <title>Music player</title>
+</head>
+<body>
+    <header>
+        <div class="menu-side">
+            <h1><i class="bi bi-music-note-list"></i>Music player</h1>
+            <div class="playlist">
+                <h4 class="active"><span></span><i class="bi bi-music-note-beamed"></i>
+                    Playlist</h4>
+                <h4><span></span><i class="bi bi-music-note-beamed"></i>
+                    Last Played</h4>
+                <h4><span></span><i class="bi bi-music-note-beamed"></i>
+                    Your picks</h4>
+            </div>
+            <div class="song-menu">
+            </div>
+        </div>
 
+        <div class="song-side">
+            <nav>
+                <ul>
+                    <li>Discover <span></span></li>
+                    <li>My Library</li>
+                    <li>Radio</li>
+                </ul>
+                <div class="search">
+                    <i class="bi bi-search"></i>
+                    <input type="text" name="" id="Search" placeholder="Search songs...">
+                </div>
+                <div class="user">
+                    <img src="Icon.jpg" alt="user" title="Samuel Mulpuri" srcset="">
+                </div>
+            </nav>
+            <div class="popular_songs">
+                <div class="h4">
+                    <h4>Song List</h4>
+                </div>
+                <div class="pop_song">
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="LIP.png" alt="ALI" srcset="">
+                            <i class="bi playListPlay bi-play-circle-fill" id="1"></i>
+                        </div>
+                        <h5>LOST IN PARADISE
+                            <br>
+                            <div class="subtitle">ALI</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="LIP.png" alt="ALI" srcset="">
+                            <i class="bi playListPlay bi-play-circle-fill" id="2"></i>
+                        </div>
+                        <h5>LOST IN PARADISE
+                            <br>
+                            <div class="subtitle">ALI</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="LIP.png" alt="ALI" srcset="">
+                            <i class="bi playListPlay bi-play-circle-fill" id="3"></i>
+                        </div>
+                        <h5>LOST IN PARADISE
+                            <br>
+                            <div class="subtitle">ALI</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="LIP.png" alt="ALI" srcset="">
+                            <i class="bi playListPlay bi-play-circle-fill" id="4"></i>
+                        </div>
+                        <h5>LOST IN PARADISE
+                            <br>
+                            <div class="subtitle">ALI</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="LIP.png" alt="ALI" srcset="">
+                            <i class="bi playListPlay bi-play-circle-fill" id="5"></i>
+                        </div>
+                        <h5>LOST IN PARADISE
+                            <br>
+                            <div class="subtitle">ALI</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="LIP.png" alt="ALI" srcset="">
+                            <i class="bi playListPlay bi-play-circle-fill" id="6"></i>
+                        </div>
+                        <h5>LOST IN PARADISE
+                            <br>
+                            <div class="subtitle">ALI</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="LIP.png" alt="ALI" srcset="">
+                            <i class="bi playListPlay bi-play-circle-fill" id="7"></i>
+                        </div>
+                        <h5>LOST IN PARADISE
+                            <br>
+                            <div class="subtitle">ALI</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="LIP.png" alt="ALI" srcset="">
+                            <i class="bi playListPlay bi-play-circle-fill" id="8"></i>
+                        </div>
+                        <h5>LOST IN PARADISE
+                            <br>
+                            <div class="subtitle">ALI</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="LIP.png" alt="ALI" srcset="">
+                            <i class="bi playListPlay bi-play-circle-fill" id="9"></i>
+                        </div>
+                        <h5>LOST IN PARADISE
+                            <br>
+                            <div class="subtitle">ALI</div>
+                        </h5>
+                    </li>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="master-play">
+            <div class="icon">
+                <i class="bi bi-skip-start-fill" id="back"></i>
+                <i class="bi bi-play-fill" id="masterPlay"></i>
+                <i class="bi bi-skip-end-fill" id="next"></i>
+            </div>
+            <span id="currentstart">0:00</span>
+            <div class="bar">
+                <input type="range" name="" id="seek" min="0" max="100" value="0">
+                <div class="bar2" id="bar2"></div>
+                <div class="dot"></div>
+            </div>
+            <span id="currentend">0:00</span>
+
+            <!-- <div class="suffle">
+                <i class="bi bi-shuffle" id="shuffle"></i>
+            </div> -->
+
+            <div class="vol">
+                <i class="bi bi-volume-down-fill" id="vol_icon"></i>
+                <input type="range" name="" id="vol" min="0" max="100" value="30">
+                <div class="vol-bar" id=""></div>
+                <div class="dot" id="vol-dot"></div>
+            </div>
+        </div>
+    </header>
+    <script src="fun.js"></script>
+</body>
+</html>
