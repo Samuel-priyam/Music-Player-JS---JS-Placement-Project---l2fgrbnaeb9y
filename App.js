@@ -54,15 +54,10 @@ const Music_play = async () => {
 
         ]
 
-        // Array.from(document.getElementsByClassName('songlist')).forEach((element, i)=>{
-        //     element.getElementsByTagName('h5')[0].innerHTML = Totaldata.tracks[i].name;
-        //     element.getElementsByTagName('img')[0].src = image[i].poster;
-        // }) 
+       
 
         Array.from(document.getElementsByClassName('songItem')).forEach((element, i)=>{
             element.getElementsByTagName('h5')[0].innerHTML = Totaldata.tracks[i].name;
-            // element.getElementsByTagName('img')[0].src = image[i].poster;
-
         })
 
         let masterPlay = document.getElementById('masterPlay');
