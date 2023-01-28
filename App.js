@@ -221,23 +221,7 @@ const Music_play = async () => {
       let shuffle = document.getElementById('shuffle');
       let arr = Totaldata.tracks;
       let newarr = [...arr];
-      // console.log(newarr);
-
-
-      
-      // shuffle.addEventListener('click', ()=>{
-      //   if(shuffle.classList.contains("active")){
-      //     shuffle.classList.remove("active");
-      //     let random = Math.floor(Math.random() * newarr.length);
-      //     music.src = random[index-1].previewURL;
-      //     music.play();
-          
-           
-      //   }
-      //   else{
-      //     shuffle.classList.add("active");
-      //   }
-      // })
+     
 
 };
 
